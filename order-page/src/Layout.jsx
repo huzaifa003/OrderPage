@@ -9,7 +9,7 @@ const Layout = () => {
            <div className="Container">
 
                 <Box  sx={{ border: '1px dashed grey', backgroundColor: 'primary.main', margin: '5%' }} >
-                Arsalan
+                Arsalan Bashir
                 </Box>
            </div>
            
