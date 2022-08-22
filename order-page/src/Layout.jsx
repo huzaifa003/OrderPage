@@ -7,7 +7,7 @@ let bgColor=getComputedStyle(document.documentElement).getPropertyValue("--backg
         <>
            <div className="Container">
 
-                <Box  sx={{ border: '1px dashed grey', backgroundColor: `${bgColor}`, margin: '5%' }} >
+                <Box  sx={{  margin: '5%' }} >
                 Arsalan 
                 </Box>
            </div>
