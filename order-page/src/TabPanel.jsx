@@ -47,12 +47,26 @@ function a11yProps(index) {
 }
 // exportable functions 
 export default function FullWidthTabs(props) {
-  const [active, setActive] = React.useState(true);
-  const clickHandler = () => {
-    setActive(() => {
-      return !active;
-    });
+  const [active, setActive] = React.useState(false);
+  const [activatedId, setactivatedId] = React.useState('pid1');
+
+  // useEffect(() => {
+
+  // },[]);
+
+  const clickHandler = (id) => {
+
+
+    const element_prev = document.getElementById(activatedId);
+    const element = document.getElementById(id);
+    //  element_prev.classList.remove('selected')
+    element_prev.classList.remove('selectedDiv');
+    setactivatedId(id);
+    element.classList.add('selectedDiv')
+
   }
+
+
 
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
@@ -89,44 +103,22 @@ export default function FullWidthTabs(props) {
       >
         <TabPanel className="tabPanel" value={value} index={0} dir={theme.direction} >
           <Box className='Packages-Container '>
-            <div onClick={clickHandler}
-              // selected selectedDiv
-              className={!active ? `product ` : `product selected selectedDiv`}>
-              <PriceCard lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-            </div>
 
-            <div onClick={clickHandler}
-              // selected selectedDiv
-              className={!active ? `product ` : `product selected selectedDiv`}>
-              <PriceCard lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-            </div>
-            <div onClick={clickHandler}
-              // selected selectedDiv
-              className={!active ? `product ` : `product selected selectedDiv`}>
-              <PriceCard lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-            </div>
-            <div onClick={clickHandler}
-              // selected selectedDiv
-              className={!active ? `product ` : `product selected selectedDiv`}>
-              <PriceCard lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-            </div>
+
+            <PriceCard handleChange={() => clickHandler('pid1')} active={activatedId} divId="pid1" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
+            <PriceCard handleChange={() => clickHandler('pid2')} active={activatedId} divId="pid2" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
+            <PriceCard handleChange={() => clickHandler('pid3')} active={activatedId} divId="pid3" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
+            <PriceCard handleChange={() => clickHandler('pid4')} active={activatedId} divId="pid4" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
+
 
           </Box>
         </TabPanel>
         <TabPanel className="tabPanel" value={value} index={1} dir={theme.direction}>
           <Box className='Packages-Container '>
+            <PriceCard handleChange={() => clickHandler('pid5')} active={activatedId} divId="pid5" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
+            <PriceCard handleChange={() => clickHandler('pid6')} active={activatedId} divId="pid6" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
+            <PriceCard handleChange={() => clickHandler('pid7')} active={activatedId} divId="pid7" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
 
-            <div onClick={clickHandler}
-              // selected selectedDiv
-              className={!active ? `product ` : `product selected selectedDiv`}>
-              <PriceCard lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-            </div>
-
-            <div onClick={clickHandler}
-              // selected selectedDiv
-              className={!active ? `product ` : `product selected selectedDiv`}>
-              <PriceCard lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-            </div>
 
 
           </Box>
@@ -136,22 +128,9 @@ export default function FullWidthTabs(props) {
         <TabPanel className="tabPanel" value={value} index={2} dir={theme.direction}>
           <Box className='Packages-Container '>
 
-            <div onClick={clickHandler}
-              // selected selectedDiv
-              className={!active ? `product ` : `product selected selectedDiv`}>
-              <PriceCard lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-            </div>
-
-            <div onClick={clickHandler}
-              // selected selectedDiv
-              className={!active ? `product ` : `product selected selectedDiv`}>
-              <PriceCard lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-            </div>
-            <div onClick={clickHandler}
-              // selected selectedDiv
-              className={!active ? `product ` : `product selected selectedDiv`}>
-              <PriceCard lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-            </div>
+          <PriceCard handleChange={() => clickHandler('pid8')} active={activatedId} divId="pid8" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
+            <PriceCard handleChange={() => clickHandler('pid9')} active={activatedId} divId="pid9" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
+           
 
 
           </Box>

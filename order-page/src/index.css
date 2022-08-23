@@ -36,14 +36,13 @@ code {
   justify-content: center;
   align-items: center;
   gap: 15px;
-
 }
 
 .product {
  
   background-color: #fff;
   cursor: pointer;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   width: 330px;
   height: 255px;
   border-radius: 13px;
@@ -78,18 +77,13 @@ code {
 }
 
 
-
-
-
-
-
 .product .sold {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
   margin: 0 0 18px;
 }
-.product .sold p {
+.sold-text {
   padding: 4px 9px 6px 8px;
   background-color: #acacac;
   font-size: 15px;
@@ -106,7 +100,7 @@ code {
     color: #11255d;
     
 }
-.product .sold p span {
+.sold-text span {
   font-size: 13px;
   line-height: 1.38462;
   text-transform: none;
@@ -212,7 +206,7 @@ color: white;
   opacity: 1!important;
 }
 
-.selected .sold p{
+.selectedSold-text{
   background-color: var(--packageActive);
   color: white;
   border: 2px solid var(--packageActive);
