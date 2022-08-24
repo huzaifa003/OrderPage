@@ -31,7 +31,7 @@ body {
 
 .Packages-Container{
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 15px;
 }
@@ -41,8 +41,10 @@ body {
   background-color: #fff;
   cursor: pointer;
   /* border: 1px solid white; */
-  width: 330px;
-  height: 255px;
+  min-height: 250px;
+    min-width: 273px;
+    max-width: 273px;
+    max-height: 250px;
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -281,3 +283,7 @@ div.label label, div.label label p.number {
   position: relative !important;
   top: -9rem !important;
 } */
+.css-19kzrtu {
+  padding: 24px 0px !important;
+  /* height: 75vh; */
+}
