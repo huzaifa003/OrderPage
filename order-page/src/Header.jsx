@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { AppBar, Typography, Toolbar } from '@mui/material';
+import React from 'react';
+import { AppBar, Toolbar } from '@mui/material';
 
 const Header = ()=>{
     let bgColor=getComputedStyle(document.documentElement).getPropertyValue("--backgroundColor");
