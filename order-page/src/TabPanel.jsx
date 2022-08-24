@@ -110,7 +110,7 @@ export default function FullWidthTabs(props) {
       </AppBar> 
       <br></br>
       <br></br>
-      <Label></Label>
+      <Label no= '1' text='Choose A Color'></Label>
       
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
