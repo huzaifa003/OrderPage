@@ -6,8 +6,8 @@ import Label from './Label';
 
 const Layout = () => {
 
-let bgColor=getComputedStyle(document.documentElement).getPropertyValue("--backgroundColor");
-let PanelBgColor=getComputedStyle(document.documentElement).getPropertyValue("--panelbgColor");
+let bgColor=getComputedStyle(document.documentElement).getPropertyValue("--panelbgColor");
+//let PanelBgColor=getComputedStyle(document.documentElement).getPropertyValue("--panelbgColor");
 
     return (
         <>
@@ -19,7 +19,7 @@ let PanelBgColor=getComputedStyle(document.documentElement).getPropertyValue("--
                <br></br>
                <Label></Label>
                <br></br>
-               <FullWidthTabs bgColor={PanelBgColor} barColor={bgColor} ></FullWidthTabs>
+               <FullWidthTabs bgColor={"transparent"} barColor={bgColor} ></FullWidthTabs>
 
                </Box>
         
