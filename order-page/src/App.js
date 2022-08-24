@@ -9,6 +9,7 @@ function App() {
         
         <Header/>
         <img alt='Logo' style={{position: 'fixed', marginTop: '1.5%' , marginLeft: '5%',zIndex:'10'}} src = {headerLogo}></img>
+
         <Layout/>
         
       </div>
