@@ -11,7 +11,7 @@ let PanelBgColor=getComputedStyle(document.documentElement).getPropertyValue("--
     return (
         <>
                <Box  sx={{  margin: '5%', marginTop: '10%' }} >
-              
+                <br></br>
                {/* Categories */}
                <Typography sx={{color: 'white'}} variant = 'h2'>Select A Plan</Typography>
                <FullWidthTabs bgColor={PanelBgColor} barColor={bgColor} ></FullWidthTabs>
