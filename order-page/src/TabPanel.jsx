@@ -33,8 +33,9 @@ function TabPanel(props) {
           <Typography>{children}</Typography>
         </Box>
       )}
+     
     </div>
-    
+  
     </>
 
   );
@@ -106,6 +107,9 @@ export default function FullWidthTabs(props) {
         </Tabs>
         
       </AppBar> 
+      <br></br>
+      <br></br>
+      <Label></Label>
       
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}

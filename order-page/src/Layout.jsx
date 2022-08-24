@@ -6,7 +6,7 @@ import Label from './Label';
 
 const Layout = () => {
 
-let bgColor=getComputedStyle(document.documentElement).getPropertyValue("--panelbgColor");
+let bgColor=getComputedStyle(document.documentElement).getPropertyValue("--backgroundColor");
 //let PanelBgColor=getComputedStyle(document.documentElement).getPropertyValue("--panelbgColor");
 
     return (
@@ -16,9 +16,7 @@ let bgColor=getComputedStyle(document.documentElement).getPropertyValue("--panel
                 <br></br>
                {/* Categories */}
                {/* <Typography sx={{color: 'white'}} variant = 'h2'>Select A Plan</Typography> */}
-               <br></br>
-               <Label></Label>
-               <br></br>
+              
                <FullWidthTabs bgColor={"transparent"} barColor={bgColor} ></FullWidthTabs>
 
                </Box>
