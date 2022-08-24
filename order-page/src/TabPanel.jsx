@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import SwipeableViews from 'react-swipeable-views';
 import PriceCard from './PriceCard';
+import MobileCategories from './MobileCategories';
 
 
 
@@ -112,6 +113,12 @@ export default function FullWidthTabs(props) {
             <PriceCard handleChange={() => clickHandler('pid3')} active={activatedId} divId="pid3" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
             <PriceCard handleChange={() => clickHandler('pid4')} active={activatedId} divId="pid4" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
           </Box>
+          <Box className='Packages-Container-Mobile '>
+           <MobileCategories handleChange={() => clickHandler('pid1')} active={activatedId} divId="pid1" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
+           <MobileCategories handleChange={() => clickHandler('pid2')} active={activatedId} divId="pid2" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
+           <MobileCategories handleChange={() => clickHandler('pid3')} active={activatedId} divId="pid3" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
+           <MobileCategories handleChange={() => clickHandler('pid4')} active={activatedId} divId="pid4" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
+          </Box>
           {/* pannel 2 or Subscription Packages Panel */}
         </TabPanel>
         <TabPanel className="tabPanel" value={value} index={1} dir={theme.direction}>
@@ -120,12 +127,24 @@ export default function FullWidthTabs(props) {
             <PriceCard handleChange={() => clickHandler('pid6')} active={activatedId} divId="pid6" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
             <PriceCard handleChange={() => clickHandler('pid7')} active={activatedId} divId="pid7" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
           </Box>
+          <Box className='Packages-Container-Mobile '>
+           <MobileCategories handleChange={() => clickHandler('pid5')} active={activatedId} divId="pid5" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
+           <MobileCategories handleChange={() => clickHandler('pid6')} active={activatedId} divId="pid6" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
+           <MobileCategories handleChange={() => clickHandler('pid7')} active={activatedId} divId="pid7" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
+          
+          </Box>
+         
           {/* pannel 3 or Resellers Package Panel */}
         </TabPanel>
         <TabPanel className="tabPanel" value={value} index={2} dir={theme.direction}>
           <Box className='Packages-Container '>
             <PriceCard handleChange={() => clickHandler('pid8')} active={activatedId} divId="pid8" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
             <PriceCard handleChange={() => clickHandler('pid9')} active={activatedId} divId="pid9" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
+          </Box>
+          <Box className='Packages-Container-Mobile '>
+           <MobileCategories handleChange={() => clickHandler('pid8')} active={activatedId} divId="pid8" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
+           <MobileCategories handleChange={() => clickHandler('pid9')} active={activatedId} divId="pid9" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
+        
           </Box>
         </TabPanel>
         {/* you can add more panels */}
