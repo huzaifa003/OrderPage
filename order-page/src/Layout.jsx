@@ -8,7 +8,7 @@ let PanelBgColor=getComputedStyle(document.documentElement).getPropertyValue("--
 
     return (
         <>
-               <Box  sx={{  margin: '5%' }} >
+               <Box  sx={{  margin: '5%', marginTop: '10%' }} >
               
                {/* Categories */}
                <FullWidthTabs bgColor={PanelBgColor} barColor={bgColor} ></FullWidthTabs>
