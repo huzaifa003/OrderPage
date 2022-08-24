@@ -5,7 +5,7 @@ const Header = ()=>{
     let bgColor=getComputedStyle(document.documentElement).getPropertyValue("--backgroundColor");
     return (
         <React.Fragment>
-            <AppBar style={{zIndex:'1'}} position = 'fixed' sx= {{background: bgColor}}>
+            <AppBar id = 'navbar' style={{zIndex:'1', top:'-70px'}} position = 'fixed' sx= {{background: bgColor}}>
                 <Toolbar>
                     
                 </Toolbar>
