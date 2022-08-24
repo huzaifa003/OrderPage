@@ -33,7 +33,7 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 15px;
+  gap: 1rem;
 }
 
 .product {
@@ -42,8 +42,8 @@ body {
   cursor: pointer;
   /* border: 1px solid white; */
   min-height: 250px;
-    min-width: 273px;
-    max-width: 273px;
+    min-width: 23.9%;
+    max-width: 24%;
     max-height: 250px;
   border-radius: 13px;
   -webkit-border-radius: 13px;

@@ -132,7 +132,7 @@ export default function FullWidthTabs(props) {
            <MobileCategories handleChange={() => clickHandler('pid4')} active={activatedId} divId="pid4" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
           </Box>
           <Box  className='Packages-Container-SmallMobile '>
-         <SmallMobile handleChange={() => clickHandler('pid1')} active={activatedId} divId="pid1"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
+         <SmallMobile handleChange={() => clickHandler('pid1')} active={activatedId} divId="pid1"  days="1" type="Month" price='150' currency='£'  saving="20"></SmallMobile>
          <SmallMobile handleChange={() => clickHandler('pid2')} active={activatedId} divId="pid2"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
          <SmallMobile handleChange={() => clickHandler('pid3')} active={activatedId} divId="pid3"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
          <SmallMobile handleChange={() => clickHandler('pid4')} active={activatedId} divId="pid4"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
