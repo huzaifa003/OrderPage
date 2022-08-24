@@ -92,7 +92,7 @@ export default function FullWidthTabs(props) {
 
   return (
     <Box sx={{ bgcolor: `${props.bgColor}`, width: "100%" }}>
-      <AppBar style={{ background: `${props.barColor}` }} position="static">
+      <AppBar style={{ background: `${props.barColor}` ,width:"99%"}} position="static">
         <Tabs
           value={value}
           onChange={handleChange}
