@@ -16,8 +16,8 @@ let PanelBgColor=getComputedStyle(document.documentElement).getPropertyValue("--
                 <br></br>
                {/* Categories */}
                {/* <Typography sx={{color: 'white'}} variant = 'h2'>Select A Plan</Typography> */}
-               <Label></Label>
                <br></br>
+               <Label></Label>
                <br></br>
                <FullWidthTabs bgColor={PanelBgColor} barColor={bgColor} ></FullWidthTabs>
 

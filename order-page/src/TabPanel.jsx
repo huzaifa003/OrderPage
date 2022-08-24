@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 import SwipeableViews from 'react-swipeable-views';
 import PriceCard from './PriceCard';
 import MobileCategories from './MobileCategories';
+import Label from './Label';
 
 
 
@@ -19,6 +20,7 @@ function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
+    <>
     <div style={{ marginTop: "10px" }}
       role="tabpanel"
       hidden={value !== index}
@@ -32,6 +34,9 @@ function TabPanel(props) {
         </Box>
       )}
     </div>
+    
+    </>
+
   );
 }
 
@@ -97,9 +102,11 @@ export default function FullWidthTabs(props) {
           <Tab label="Trial" {...a11yProps(0)} />
           <Tab label="Subscription" {...a11yProps(1)} />
           <Tab label="Resellers" {...a11yProps(2)} />
-          {/* you can add more tabs  */}
+          {/* {/* you can add more tabs  */}
         </Tabs>
-      </AppBar>
+        
+      </AppBar> 
+      
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
