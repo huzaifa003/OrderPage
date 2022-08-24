@@ -10,6 +10,7 @@ import SwipeableViews from 'react-swipeable-views';
 import PriceCard from './PriceCard';
 import MobileCategories from './MobileCategories';
 import Label from './Label';
+import SmallMobile from './SmallMobile';
 
 
 
@@ -130,6 +131,12 @@ export default function FullWidthTabs(props) {
            <MobileCategories handleChange={() => clickHandler('pid3')} active={activatedId} divId="pid3" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
            <MobileCategories handleChange={() => clickHandler('pid4')} active={activatedId} divId="pid4" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
           </Box>
+          <Box  className='Packages-Container-SmallMobile '>
+         <SmallMobile handleChange={() => clickHandler('pid1')} active={activatedId} divId="pid1"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
+         <SmallMobile handleChange={() => clickHandler('pid2')} active={activatedId} divId="pid2"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
+         <SmallMobile handleChange={() => clickHandler('pid3')} active={activatedId} divId="pid3"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
+         <SmallMobile handleChange={() => clickHandler('pid4')} active={activatedId} divId="pid4"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
+          </Box>
           {/* pannel 2 or Subscription Packages Panel */}
         </TabPanel>
         <TabPanel className="tabPanel" value={value} index={1} dir={theme.direction}>
@@ -144,6 +151,12 @@ export default function FullWidthTabs(props) {
            <MobileCategories handleChange={() => clickHandler('pid7')} active={activatedId} divId="pid7" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
           
           </Box>
+          <Box  className='Packages-Container-SmallMobile '>
+         <SmallMobile handleChange={() => clickHandler('pid5')} active={activatedId} divId="pid5"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
+         <SmallMobile handleChange={() => clickHandler('pid6')} active={activatedId} divId="pid6"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
+         <SmallMobile handleChange={() => clickHandler('pid7')} active={activatedId} divId="pid7"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
+        
+          </Box>
          
           {/* pannel 3 or Resellers Package Panel */}
         </TabPanel>
@@ -155,6 +168,12 @@ export default function FullWidthTabs(props) {
           <Box className='Packages-Container-Mobile '>
            <MobileCategories handleChange={() => clickHandler('pid8')} active={activatedId} divId="pid8" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
            <MobileCategories handleChange={() => clickHandler('pid9')} active={activatedId} divId="pid9" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20"></MobileCategories>
+        
+          </Box>
+          <Box  className='Packages-Container-SmallMobile '>
+         
+         <SmallMobile handleChange={() => clickHandler('pid8')} active={activatedId} divId="pid8"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
+         <SmallMobile handleChange={() => clickHandler('pid9')} active={activatedId} divId="pid9"  days="1" type="Month" price='50' currency='£'  saving="20"></SmallMobile>
         
           </Box>
         </TabPanel>
