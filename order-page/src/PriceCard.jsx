@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react'
+import React from 'react'
 
 const PriceCard = (props) => {
   console.log(props.divId)

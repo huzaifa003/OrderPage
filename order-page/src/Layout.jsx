@@ -14,7 +14,7 @@ let PanelBgColor=getComputedStyle(document.documentElement).getPropertyValue("--
                <FullWidthTabs bgColor={PanelBgColor} barColor={bgColor} ></FullWidthTabs>
 
                </Box>
-           </div>
+        
            
 
 
