@@ -200,7 +200,8 @@ color: white;
   
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px), 
+screen and (height: 980px){
   .Packages-Container{
   display: none;
   }.Packages-Container-Mobile{
@@ -211,6 +212,10 @@ color: white;
   }.css-19kzrtu {
     padding: 20px;
     height: 75vh;
+}
+.mobileProduct{
+  width: 100%;
+
 }
 
 }
