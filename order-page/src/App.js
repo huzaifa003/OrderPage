@@ -9,41 +9,9 @@ function App() {
     <>
       <div className="Container">
         
-        <Header ></Header>
+        <Header/>
         <img style={{position: 'fixed', marginTop: '1.5%' , marginLeft: '5%',zIndex:'10'}} src = {headerLogo}></img>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <h1>Hello</h1>
-        <Layout>
-
-        
-
-        </Layout>
+        <Layout/>
         
       </div>
     </>
