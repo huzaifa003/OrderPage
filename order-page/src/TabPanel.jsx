@@ -10,6 +10,7 @@ import SwipeableViews from 'react-swipeable-views';
 import PriceCard from './PriceCard';
 
 
+
 // helping functions 
 
 // functions of bottom panels 
@@ -47,26 +48,8 @@ function a11yProps(index) {
 }
 // exportable functions 
 export default function FullWidthTabs(props) {
-  const [active, setActive] = React.useState(false);
+  //const [active, setActive] = React.useState(false);
   const [activatedId, setactivatedId] = React.useState('pid1');
-
-  // useEffect(() => {
-
-  // },[]);
-
-  const clickHandler = (id) => {
-
-
-    const element_prev = document.getElementById(activatedId);
-    const element = document.getElementById(id);
-    //  element_prev.classList.remove('selected')
-    element_prev.classList.remove('selectedDiv');
-    setactivatedId(id);
-    element.classList.add('selectedDiv')
-
-  }
-
-
 
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
@@ -78,6 +61,26 @@ export default function FullWidthTabs(props) {
   const handleChangeIndex = (index) => {
     setValue(index);
   };
+
+  
+
+  const clickHandler = (id) => {
+    const element_prev = document.getElementById(activatedId);
+    const element = document.getElementById(id);
+   
+    if(element_prev===null){
+      setactivatedId(id);
+    element.classList.add('selectedDiv')
+    }else{
+    element_prev.classList.remove('selectedDiv');
+    setactivatedId(id);
+    element.classList.add('selectedDiv')
+    }
+   
+
+  }
+
+
 
   return (
     <Box sx={{ bgcolor: `${props.bgColor}`, width: "100%" }}>
@@ -109,17 +112,13 @@ export default function FullWidthTabs(props) {
             <PriceCard handleChange={() => clickHandler('pid2')} active={activatedId} divId="pid2" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
             <PriceCard handleChange={() => clickHandler('pid3')} active={activatedId} divId="pid3" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
             <PriceCard handleChange={() => clickHandler('pid4')} active={activatedId} divId="pid4" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-
-
           </Box>
         </TabPanel>
         <TabPanel className="tabPanel" value={value} index={1} dir={theme.direction}>
           <Box className='Packages-Container '>
-            <PriceCard handleChange={() => clickHandler('pid5')} active={activatedId} divId="pid5" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
+          <PriceCard handleChange={() => clickHandler('pid5')} active={activatedId} divId="pid5" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
             <PriceCard handleChange={() => clickHandler('pid6')} active={activatedId} divId="pid6" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
             <PriceCard handleChange={() => clickHandler('pid7')} active={activatedId} divId="pid7" lastSold="84" days="1" type="Month" price='50' currency='£' billingCycle="Month" saving="20" ></PriceCard>
-
-
 
           </Box>
 
