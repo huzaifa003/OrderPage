@@ -1,8 +1,7 @@
 import React from 'react'
 import Box from '@mui/material/Box';
 import FullWidthTabs from "./TabPanel";
-import { Typography } from '@mui/material';
-import Label from './Label';
+
 
 const Layout = () => {
 

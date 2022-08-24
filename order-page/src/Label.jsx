@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Label = () => {
+const Label = (props) => {
   return (
    <>
     <div class="label">
     <label for="firstStep">
-    <p class="number">1</p>Choose Your Plan</label>
+    <p class="number">{props.no}</p>{props.text}</label>
     </div>
    </>
   )
