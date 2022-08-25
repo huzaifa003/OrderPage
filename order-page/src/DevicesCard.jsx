@@ -1,48 +1,48 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-const bull = (
-    <Box
-        component="span"
-        sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-    >
-        •
-    </Box>
-);
+// import Box from '@mui/material/Box';
+// import Card from '@mui/material/Card';
+// import CardActions from '@mui/material/CardActions';
+// import CardContent from '@mui/material/CardContent';
+// import Button from '@mui/material/Button';
+// import Typography from '@mui/material/Typography';
+// import { CardActionArea } from '@mui/material';
+// const bull = (
+//     <Box
+//         component="span"
+//         sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+//     >
+//         •
+//     </Box>
+// );
 
 
 export default function OutlinedCard(props) {
     return (
-        <Box sx={{ minWidth: 275,  }}>
-            <CardActionArea>
-            <Card variant="outlined">
-                <React.Fragment>
-                    <CardContent>
-                        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                            No Of Device(s)
-                        </Typography>
-                        <Typography variant="h5" component="div">
-                            {props.noOfDevice} Devices
-                        </Typography>
-                        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                            Price: {`+$${props.price}` } {bull}
-                        </Typography>
-                        <Typography variant="body2">
-                            Enjoy and Use on
-                            <br />
-                            {`${props.noOfDevice} of your devices`}
-                        </Typography>
-                    </CardContent>
-            
-                </React.Fragment>
+        <>
+        <div id={props.divId} onClick={props.handleChange}
+         className={(props.active===props.divId)?`selectedDiv device`:`device`}>
+    <div className="content">
 
-            </Card>
-            </CardActionArea>
-        </Box>
+    <div style={{marginLeft:"20px"}} className={(props.active===props.divId)?`checkbox devCheck checked`:` devCheck checkbox`}>
+            {/* <CheckIcon   class={(props.active===props.divId)?`marked`:`Notmarked`} style={{fontSize:"1rem" }} ></CheckIcon> */}
+            {/* <FontAwesomeIcon class={(props.active===props.divId)?`marked`:`Notmarked`} style={{fontSize:"1rem" }} icon="fa-solid fa-check" /> */}
+           <div className={(props.active===props.divId)?`marked `:`Notmarked`} style={{fontSize:"1rem",textAlign:"center" }}>
+            <i className={`fa-solid fa-check`}></i>
+           </div>
+          </div>
+        <div className={(props.active===props.divid)?`info `:`info`}   >
+            <p  className={`title`}>{props.devices}</p>
+            <p className={`description`}>{props.description}
+            </p>
+        </div>
+    </div>
+    <div className="pricing ">
+        <p className={`price `}>
+           {props.price}<span>€</span>/{props.duration}
+        </p>
+       
+    </div>
+</div>
+        </>
     );
 }

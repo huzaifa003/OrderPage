@@ -225,6 +225,26 @@ screen and (height: 980px){
 }
 
 }
+@media screen and (max-width: 665px){
+  .title,.description,.checkbox{
+  font-size: .9rem;
+  }
+  .pricing{
+    width: 30%;
+  }
+  .pricing .price{
+    font-size: 0.9rem!important;
+  }.price span{
+    font-size: 0.9rem!important;
+  }
+  .content{
+    gap: 1rem !important;
+   
+  }
+  .info{
+    width: 60%!important;
+  }
+}
 @media screen and (max-width: 490px){
   .Packages-Container-Mobile{
     display: none;
@@ -236,7 +256,32 @@ screen and (height: 980px){
     align-items: center;
     gap: 2.5rem;
    }
+  .devCheck{
+    width: 12% !important;
+  }
+  .info{
+    width: 60%!important;
+  }
+  .css-1tmu6hb-MuiButtonBase-root-MuiAccordionSummary-root{
+    height: 10vh !important;
+  }
+  .device{
+    padding: 0px !important;
+  }
 
+}
+@media screen and (max-width: 390px){
+  .device{
+    padding: 0px!important;
+  }
+  .title,.description,.checkbox{
+    font-size: .7rem;
+    }
+  .pricing .price{
+      font-size: 0.7rem!important;
+    }.price span{
+      font-size: 0.7rem!important;
+    }
 }
 @media screen and (max-width: 280px){
   .css-1vw5i9y-MuiButtonBase-root-MuiTab-root{
@@ -333,3 +378,43 @@ div.label label, div.label label p.number {
 .Notmarked{
   display: none;
 }
+.device{
+  border-radius: 13px;
+  box-shadow: 0 2px 14px 0 rgb(0 0 0 / 22%);
+    background-color: #030e2e;
+  padding: 19px 14px 20px 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 91px;
+  transition-property: transform,opacity;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(.25,.8,.5,1);
+}
+.content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}
+.pricing {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+  .pricing p.price {
+  transition-property: transform,opacity;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(.25,.8,.5,1);
+/* color: rgb(161, 161, 161); */
+font-size: 1.5rem;
+}
+
+.css-1tmu6hb-MuiButtonBase-root-MuiAccordionSummary-root{
+  height: 13vh !important;
+}
+
+.title,.description,.checkbox,.price{
+  color: white;
+}
+
