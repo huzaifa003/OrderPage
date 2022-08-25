@@ -333,3 +333,17 @@ div.label label, div.label label p.number {
 .Notmarked{
   display: none;
 }
+
+.MuiCardActionArea-focusHighlight{
+  border: none
+}
+.Mui-focusVisible{
+  border: none;
+}
+.MuiCardActionArea-root{
+  border: none;
+}
+
+.MuiCard-root	{
+  border: none;
+}
