@@ -2,9 +2,19 @@
 import Layout from './Layout';
 import Header from './Header'
 import headerLogo from './assets/icons/logo_header.845e5c5.svg'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 function App() {
   return (
     <>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
       <div className="Container">
         
         <Header/>
@@ -13,6 +23,7 @@ function App() {
         <Layout/>
         
       </div>
+      </ThemeProvider>
     </>
   );
 }

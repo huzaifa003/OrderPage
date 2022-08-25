@@ -18,7 +18,7 @@ const bull = (
 
 export default function OutlinedCard(props) {
     return (
-        <Box sx={{ minWidth: 275 }}>
+        <Box sx={{ minWidth: 275,  }}>
             <CardActionArea>
             <Card variant="outlined">
                 <React.Fragment>
