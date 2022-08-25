@@ -347,3 +347,7 @@ div.label label, div.label label p.number {
 .MuiCard-root	{
   border: none;
 }
+
+.root{
+  border: none;
+}

@@ -22,8 +22,8 @@ export default function OutlinedCard(props) {
 
             
             <Box sx={{ minWidth: 275, }}>
-                <CardActionArea>
-                    <Card   sx={(props.activatedId===props.divId)? {color: 'white', border: 2 , borderColor: activatedColor, borderRadius: 1, borderWidth: 2} : {color:'rgba(255, 255, 255, 0.5)'}} raised='true' variant="outlined">
+                <CardActionArea style={{ border: "none", boxShadow: "none" }}>
+                    <Card sx={(props.activatedId===props.divId)? {color: 'white', /*border: 2 , borderColor: activatedColor, borderRadius: 1, borderWidth: 2*/} : {color:'rgba(255, 255, 255, 0.5)'}}  variant="outlined">
                         <React.Fragment>
                             <CardContent>
                                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
