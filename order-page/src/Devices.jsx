@@ -27,6 +27,7 @@ export default function SimpleAccordion() {
 
   }
 
+  
   return (
     <div>
       <Accordion>
@@ -67,3 +68,4 @@ export default function SimpleAccordion() {
     </div>
   );
 }
+
